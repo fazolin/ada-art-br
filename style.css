@@ -6,21 +6,42 @@
     text-decoration: none;
 }
 body {
+
     font-size: 100%;
-    background: rgb(0, 0, 0);
 }
+
 .header {
-    align-items: flex-start;
-    padding: 24px;
+    padding: 20px;
 }
 .header-menu {
     display: flex;
     flex-direction: column;
+    width: max-content;
+
 }
 .header-menu-item {
+    
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
     font-family: "Victor Mono", monospace;
-    color: white;
-    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
     font-size: 18px;
     line-height: 18px;
+    text-align: left;
+}
+.header-menu-item:hover {
+    background-color: rgb(224, 224, 224);
+    color: rgb(0, 0, 0);
+}
+.header-menu-item:focus {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.footer-logo{
+    width: 70px;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
 }
