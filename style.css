@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap')
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-size: 100%;
+    background: rgb(0, 0, 0);
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+.header-img {
+    height: 72px;
+}
+.header-menu {
+    display: flex;
+    gap: 32px;
+}
+.header-menu-item {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+.content {
+    margin-bottom: 48px;
+    border-top: 0.4px solid white;
+}
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.main-content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.main-content-text-title {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: 800;
+    font-size: 40px;
+}
+.main-content-text-subtitle {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+.main-content-image {
+    height: 720px;
+}
+.secondary-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.secondary-content-title {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+.secondary-content-title-text {
+
+}
+.secondary-content-title-paragraph {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+.secondary-content-title-paragraph-text {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 16px;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 0.4px solid white;
+}
+.footer-title {
+
+
+}
+.footer-title-text {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 16px;
+
+}
+.footer-paragraph {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 16px;
+}
+.footer-paragraph-text {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 16px;
+}
