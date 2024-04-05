@@ -12,12 +12,14 @@ var backgroundColor;
 var visualMode = 0;
 var numModes = 4;
 var invertColors = false;
+var colorParticle = 1;
 
 function setup() {
   nums = (windowWidth * windowHeight) / particleDensity;
   backgroundColor = color(0, 0, 10);
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0, 0);
+  canvas.style("position", "fixed");
   canvas.style("z-index", "-1");
 
   background(backgroundColor);
@@ -67,7 +69,7 @@ function draw() {
     if (visualMode == 0) {
       colorCase = int((particles[i].pos.x / width) * 3) + 1;
     }
-    switch (colorCase) {
+    switch (colorParticle) {
       case 1:
         var lifeRatioGrayscale = min(
           255,
@@ -188,6 +190,12 @@ function advanceVisual() {
   for (var i = 0; i < nums; i++) {
     particles[i].respawn();
     particles[i].life = random(0, maxLife);
+  }
+
+  if (colorParticle < 3) {
+    colorParticle++;
+  } else {
+    colorParticle = 1;
   }
 }
 
