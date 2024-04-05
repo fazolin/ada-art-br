@@ -1,32 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ateliê Digital Analógico</title>
-    <meta name="description" content="O Ateliê Digital Analógico é um estúdio de criação inovador, 
-    especializado em arte digital e tecnologia criativa. Destacando-se em técnicas como o video mapping,
-     o ateliê transforma espaços tridimensionais em experiências visuais dinâmicas e envolventes, 
-     enquanto suas salas imersivas e ambientes interativos oferecem uma imersão completa em mundos digitais 
-     cativantes. Com tecnologia avançada e uma equipe talentosa, o ateliê está na vanguarda da expressão 
-     artística digital, criando experiências memoráveis e inspiradoras que desafiam limites e expandem 
-     horizontes criativos.">
-     <link rel="stylesheet" type="text/css" href="style.css">
-     <script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
-</head>
-<body>
- <script src="sketchs/index_bg.js"></script>
-<header class="header">
-    <nav class="header-menu">
-        <a href="index.html" class="header-menu-item-selected">ADA</a>
-        <a href="trabalhos.html" class="header-menu-item">TRABALHOS</a>
-        <a href="info.html" class="header-menu-item">INFO</a>
-    </nav>
-</header>
+    <meta
+      name="description"
+      content="O Ateliê Digital Analógico é um estúdio de criação inovador, 
+  especializado em arte digital e tecnologia criativa. Destacando-se em técnicas como o video mapping,
+   o ateliê transforma espaços tridimensionais em experiências visuais dinâmicas e envolventes, 
+   enquanto suas salas imersivas e ambientes interativos oferecem uma imersão completa em mundos digitais 
+   cativantes. Com tecnologia avançada e uma equipe talentosa, o ateliê está na vanguarda da expressão 
+   artística digital, criando experiências memoráveis e inspiradoras que desafiam limites e expandem 
+   horizontes criativos."
+    />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+    <script src="js/index_bg_01.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="side-bar">
+      <div class="menu">
+        <button class="page-button">
+          <a class="text-button" href="#ada"> ADA </a>
+        </button>
+        <button class="page-button">
+          <a class="text-button" href="#info"> INFO </a>
+        </button>
+        <button class="page-button">
+          <a class="text-button" href="#trabalhos"> TRABALHOS </a>
+        </button>
+      </div>
+      <div class="logo">
+        <img src="img/logo_ada.svg" alt="ADA">
+      </div>
 
-    <img class="footer-logo" src="img/logo_ada.svg" alt="ADA">
-
-
-</body>
+    </div>
+    <div class="content">
+      <section id="ada">
+        <p class="home-text">
+         SOMOS UM ESTÚDIO QUE DESENVOLVE TRABALHOS QUE UNEM <strong>ARTE E TECNOLOGIA</strong>.
+        </p>
+      </section>
+      <section id="info">
+        <div class="info-texto">
+          <h2>CONTATO@ADA.COM.BR</h2>
+          <h2>+55 11 98434.0084</h2>
+          <h2>INSTAGRAM.COM/ATELIEDIGITALANALOGICO</h2>
+        </div>
+        <div class="info-texto">
+          <h2>VIDEO MAPPING</h2>
+          <h2>SALAS IMERSIVAS</h2>
+          <h2>INTERATIVIDADE</h2>
+          <h2>STAGE DESIGN</h2>
+          <h2>ARTE DIGITAL</h2>
+        </div>
+      </section>
+      <section id="trabalhos">
+        <div class="trabalho">
+          <h1 class="trabalho-title">REEL</h1>
+          <div class="trabalho-video"><iframe class="video" src="https://www.youtube.com/embed/qb5qjrCxBBY?si=AzwhzSWQPoQ25RcQ" allowfullscreen></iframe></div>
+          <h2>COLETÂNEA COM ALGUNS TRABALHOS RECENTES</h2>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
+
+
