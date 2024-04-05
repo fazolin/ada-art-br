@@ -20,4 +20,3 @@ jobs:
           server: ftp.ada.art.br
           username: sitebuilder@ada.art.br
           password: Caioada1@
-          server.dir: public_html/
