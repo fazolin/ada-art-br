@@ -208,9 +208,80 @@ section {
 }
 
 @media (min-width:320px) and (max-width:800px)  {
-  .menu {
-    flex-direction: row;
+  html {
+    overflow: hidden;
   }
+ 
+  body {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    /* padding: 10px; */
+    /* border: 1px solid white; */
+    align-items: center;
+    
+}
+.side-bar {
+  position: fixed !important;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 100vh; */
+  width: auto;
+  padding: 10px;
+  /* border: 1px solid white; */
+  width: 100%;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+
+}
+.logo {
+  width: 80px;
+  /* align-self: center; */
+  margin-bottom: 80px;
+  animation: fadeIn 1s;
+  /* border: 1px solid white; */
+}
+a {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+section {
+  height: 100vh;
+  margin-left: 0px;
+}
+h1{
+  font-family: "Victor Mono", monospace;
+  color: white;
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: 200;
+}
+.home-text {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+#trabalhos {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+ 
+}
 
 }
 
