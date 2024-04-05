@@ -206,3 +206,6 @@ function keyPressed() {
 function touchStarted() {
   advanceVisual();
 }
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}

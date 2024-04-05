@@ -15,7 +15,9 @@
    horizontes criativos."
     />
     <script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="js/index_bg_01.js"></script>
+    <script src="js/scripts.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,18 +25,24 @@
       href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <div class="side-bar">
       <div class="menu">
         <button class="page-button">
-          <a class="text-button" href="#ada"> ADA </a>
+          <a class="text-button" href="#ada" onclick="Highlight(this)"> ADA </a>
         </button>
         <button class="page-button">
-          <a class="text-button" href="#info"> INFO </a>
+          <a class="text-button" href="#info" onclick="Highlight(this)">
+            INFO
+          </a>
         </button>
         <button class="page-button">
-          <a class="text-button" href="#trabalhos"> TRABALHOS </a>
+          <a class="text-button" href="#trabalhos" onclick="Highlight(this)">
+            TRABALHOS
+          </a>
         </button>
       </div>
       <div class="logo">
@@ -42,29 +50,37 @@
       </div>
     </div>
     <div class="content">
+      <section>&nbsp</section>
       <section id="ada">
-        <p class="home-text">
-          SOMOS UM ESTÚDIO QUE DESENVOLVE TRABALHOS QUE UNEM
-          <strong>ARTE E TECNOLOGIA</strong>.
-        </p>
+        <div class="home-text">
+          <h2>ATELIÊ DIGITAL ANALÓGICO</h2>
+          <h1>
+            SOMOS UM ESTÚDIO QUE DESENVOLVE TRABALHOS QUE UNEM
+            <strong>ARTE E TECNOLOGIA</strong>.
+          </h1>
+        </div>
       </section>
       <section id="info">
         <div class="info-texto">
-          <h2>CONTATO@ADA.COM.BR</h2>
-          <h2>+55 11 98434.0084</h2>
-          <h2>INSTAGRAM.COM/ATELIEDIGITALANALOGICO</h2>
+          <h3>
+            VIDEO MAPPING<br />
+            SALAS IMERSIVAS<br />
+            INTERATIVIDADE<br />
+            STAGE DESIGN<br />
+            ARTE DIGITAL<br />
+          </h3>
         </div>
         <div class="info-texto">
-          <h2>VIDEO MAPPING</h2>
-          <h2>SALAS IMERSIVAS</h2>
-          <h2>INTERATIVIDADE</h2>
-          <h2>STAGE DESIGN</h2>
-          <h2>ARTE DIGITAL</h2>
+          <h3>
+            CONTATO@ADA.COM.BR<br />
+            +55 11 98434.0084<br />
+            INSTAGRAM.COM/ATELIEDIGITALANALOGICO
+          </h3>
         </div>
       </section>
       <section id="trabalhos">
         <div class="trabalho">
-          <h1 class="trabalho-title">REEL</h1>
+          <h2 class="trabalho-title">REEL</h2>
           <div class="trabalho-video">
             <iframe
               class="video"
@@ -72,7 +88,7 @@
               allowfullscreen
             ></iframe>
           </div>
-          <h2>COLETÂNEA COM ALGUNS TRABALHOS RECENTES</h2>
+          <h3>COLETÂNEA COM ALGUNS TRABALHOS RECENTES</h3>
         </div>
       </section>
     </div>
