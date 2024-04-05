@@ -14,7 +14,10 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.ftp_host }}
-          username: ${{ secrets.ftp_user }}
-          password: ${{ secrets.ftp_password }}
+          # server: ${{ secrets.ftp_host }}
+          # username: ${{ secrets.ftp_user }}
+          # password: ${{ secrets.ftp_password }}
+          server: ftp.ada.art.br
+          username: sitebuilder@ada.art.br
+          password: Caioada1@
           server.dir: public_html/
