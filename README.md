@@ -2,7 +2,6 @@
 
 Site do Ateliê Digital Analógico
 
-- pagina inicial (interativo)
-- o que fazemos
+- ada
+- info
 - trabalhos
-- contato
