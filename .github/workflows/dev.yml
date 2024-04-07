@@ -15,6 +15,5 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.ftp_host }}
-          username: ${{ secrets.ftp_user }}
-          password: ${{ secrets.ftp_password }}
-          server-dir: dev.ada.art.br/
+          username: ${{ secrets.ftp_user_dev }}
+          password: ${{ secrets.ftp_password_dev }}
