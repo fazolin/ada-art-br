@@ -177,6 +177,7 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 20px;
+  align-items: center;
  
 }
 .trabalho {
