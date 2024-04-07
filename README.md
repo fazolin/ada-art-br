@@ -6,5 +6,3 @@ Site do Ateliê Digital Analógico
 - o que fazemos
 - trabalhos
 - contato
-
-- teste de alteração da dev
