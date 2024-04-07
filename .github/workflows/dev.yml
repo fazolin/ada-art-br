@@ -17,4 +17,3 @@ jobs:
           server: ${{ secrets.ftp_host }}
           username: ${{ secrets.ftp_user_dev }}
           password: ${{ secrets.ftp_password_dev }}
-          server-dir: dev.ada.art.br/
