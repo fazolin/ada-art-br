@@ -14,83 +14,177 @@
    artística digital, criando experiências memoráveis e inspiradoras que desafiam limites e expandem 
    horizontes criativos."
     />
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="js/index_bg_01.js"></script>
-    <script src="js/scripts.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js"></script>
+    <script src="js/sketch-01.js"></script>
+    <script defer src="js/scripts.js"></script>
   </head>
   <body>
-    <div class="side-bar">
+    <nav>
       <div class="menu">
-        <button class="page-button">
-          <a class="text-button" href="#ada" onclick="Highlight(this)"> ADA </a>
-        </button>
-        <button class="page-button">
-          <a class="text-button" href="#info" onclick="Highlight(this)">
-            INFO
-          </a>
-        </button>
-        <button class="page-button">
-          <a class="text-button" href="#trabalhos" onclick="Highlight(this)">
-            TRABALHOS
-          </a>
-        </button>
+        <a href="#ada" id="home" class="menu-item" onclick="toggleActive(event)">ADA</a>
+        <a href="#info" class="menu-item" onclick="toggleActive(event)">INFO</a>
+        <a href="#works" class="menu-item" onclick="toggleActive(event)">WORKS</a>
+        <!-- <a href="#news" class="menu-item" onclick="toggleActive(event)">NEWS</a> -->
       </div>
-      <div class="logo">
-        <img src="img/logo_ada.svg" alt="ADA" />
-      </div>
-    </div>
-    <div class="content">
-      <section>&nbsp</section>
+    </nav>
+    <main>
       <section id="ada">
-        <div class="home-text">
+        <div class="hidden ada-text">
           <h2>ATELIÊ DIGITAL ANALÓGICO</h2>
           <h1>
-            SOMOS UM ESTÚDIO QUE DESENVOLVE TRABALHOS QUE UNEM
-            <strong>ARTE E TECNOLOGIA</strong>.
+            SOMOS UM ESTÚDIO QUE DESENVOLVE TRABALHOS COM
+            <strong>ARTE </strong>E<strong> TECNOLOGIA</strong>.
           </h1>
         </div>
       </section>
       <section id="info">
-        <div class="info-texto">
-          <h3>
-            VIDEO MAPPING<br />
-            SALAS IMERSIVAS<br />
-            INTERATIVIDADE<br />
-            STAGE DESIGN<br />
-            ARTE DIGITAL<br />
-          </h3>
+        <div class="hidden info-post">
+          <ul>
+            <li>VIDEO MAPPING</li>
+            <li>SALAS IMERVISVAS</li>
+            <li>VISUAIS EM TEMPO REAL</li>
+            <li>STAGE DESIGN</li>
+            <li>INTERATIVIDADE</li>
+            <li>SOFTWARE & HARDWARE</li>
+          </ul>
         </div>
-        <div class="info-texto">
-          <h3>
-            CONTATO@ADA.COM.BR<br />
-            +55 11 98434.0084<br />
-            @ATELIEDIGITALANALOGICO
-          </h3>
-        </div>
-      </section>
-      <section id="trabalhos">
-        <div class="trabalho">
-          <h2 class="trabalho-title">REEL</h2>
-          <div class="trabalho-video">
-            <iframe
-              class="video"
-              src="https://www.youtube.com/embed/eX01_1xz2PU?si=9b9mcbXXjy4_6yu8"
-              allowfullscreen
-            ></iframe>
+        <div class="hidden info-post">
+          <h2><strong>CONTATO</strong></h2>
+          <h2>CONTATO@ADA.ART.BR</h2>
+          <h2>+55 11 98434-0084</h2>
           </div>
-          <h3>COLETÂNEA COM ALGUNS TRABALHOS RECENTES</h3>
+        </div>
+        <div class="hidden info-post">
+          <h2><strong>SIGA</strong></h2>
+          <div class="social">
+            <img
+              class="social-icon"
+              src="img/5296765_camera_instagram_instagram logo_icon.png"
+              alt=""
+            />
+            <a href="https://www.instagram.com/ateliedigitalanalogico/" target="_blank"> @ATELIEDIGITALANALOGICO</a>
+          </div>
+          <div class="social">
+            <img
+              class="social-icon"
+              src="img/317714_video_youtube_icon.png"
+              alt=""
+            />
+            <a href="https://www.youtube.com/@ateliedigitalanalogico" target="_blank"> @ATELIEDIGITALANALOGICO</a>
+          </div>
         </div>
       </section>
-    </div>
+      <section id="works">
+        <div class="work hidden">
+          <h2><strong>REEL</strong></h2>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/eX01_1xz2PU?si=B3JPU2GN8V0Jcj-A"
+            title="REEL 2023"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <h3>
+            ALGUNS DE NOSSOS ÚLTIMOS TRABALHOS
+          </h3>
+        </div>
+        <div class="work hidden">
+          <h2><strong>VIRADA CULTURA SP 2023</strong></h2>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/qb5qjrCxBBY?si=JA8VPag1KNxu3nS6"
+            title="REEL 2023"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <h3>
+            TRÊS MONUMENTAIS PROJEÇÕES MAPEADAS COLORINDO O CENTRO DA MAIOR CAPITAL DA AMÉRICA LATINA.
+          </h3>
+        </div>
+        <div class="work hidden">
+          <h2><strong>467 ANOS DA CIDADE DE SÃO PAULO</strong></h2>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/5pCefp6nEG8?si=wBL3HyPwDc4CZOxZ&amp;start=5"
+            title="REEL 2023"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <h3>
+            UM VIDEO MAPPING SOBRE CIÊNCIA E VACINAS, COMEMORANDO A TÃO SONHADA VACINA CONTRA A COVID E O ANIVERSÁRIO DA CIDADE DE SÃO PAULO.
+          </h3>
+        </div>
+        <div class="work hidden">
+          <h2><strong>ANIVERSÁRI ODE 60 ANOS DA VIVARA</strong></h2>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/BXkiO_KxKMI?si=9UYRxmwPnXMvop4v"
+            title="REEL 2023"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <h3>
+            UM JANTAR IMERSIVO COM NOSSAS PROJEÇÕES GENERATIVAS
+          </h3>
+        </div>
+        <div class="work hidden">
+          <h2><strong>XP INVESTIMENTOS</strong></h2>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/5ZtaW_vIP18?si=_sfFwuJpxXcxQ7zO"
+            title="REEL 2023"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <h3>
+            HOMENAGEM AOS ATLETAS OLÍMPICOS POR XP INVESTIMENTOS.
+          </h3>
+        </div>
+        <div class="work hidden">
+          <h2><strong>RAIVA</strong></h2>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/c6qtnGzYpxE?si=1OHp9rNTJ9jpwc-j"
+            title="REEL 2023"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <h3>
+            PROJEÇÕES MAPEADAS NO INSTITUTO PASTEUR, SÃO PAULO.
+          </h3>
+        </div>
+      </section>
+      <!-- <section id="news">
+        <h1 class="hidden">NEWS</h1>
+      </section> -->
+    </main>
+    <footer>
+      <img class="logo" src="img/logo_ada.svg" alt="">
+    </footer>
   </body>
 </html>

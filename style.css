@@ -1,253 +1,230 @@
-/* --------------------------- css reset --------------------------- */
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  /*
-    2. Remove default margin
-  */
-  * {
-    margin: 0;
-  }
-  /*
-    Typographic tweaks!
-    3. Add accessible line-height
-    4. Improve text rendering
-  */
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  /*
-    5. Improve media defaults
-  */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  /*
-    6. Remove built-in form typography styles
-  */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  /*
-    7. Avoid text overflows
-  */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  /*
-    8. Create a root stacking context
-  */
-  #root, #__next {
-    isolation: isolate;
-  }
 * {
-    margin: 0;
+    font-family: "Victor Mono", monospace;
+    font-optical-sizing: auto;
     padding: 0;
+    margin: 0;
+    gap: 0;
     box-sizing: border-box;
+    font-size: 100%;
+	vertical-align: baseline;
     text-decoration: none;
-/* --------------------------- css reset --------------------------- */    
-
+    color: white;
+    font-weight: 100;
 }
-html {
-    background-color: black;
-    scroll-behavior: smooth;
+html, body {
+    height: 100%;
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
 }
 body {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    background-color: black;
 }
 a {
-  font-family: "Victor Mono", monospace;
-  color: white;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 600;
+    
 }
-p {
-  font-family: "Victor Mono", monospace;
-  color: white;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 100;
-  background-color: black;
-  height: min-content;
+nav {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    min-width: max-content;
+    width: 10rem;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    padding: 2rem;
 }
-h1{
-  font-family: "Victor Mono", monospace;
-  color: white;
-  font-size: 60px;
-  line-height: 100%;
-  font-weight: 200;
+main {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+    padding: 2rem;
+    gap: 2rem;
 }
-h2{
-  font-family: "Victor Mono", monospace;
-  color: white;
-  font-size: 16px;
-  line-height: auto;
-  font-weight: 400;
-}
-h3{
-  font-family: "Victor Mono", monospace;
-  color: white;
-  font-size: 16px;
-  line-height: auto;
-  font-weight: 400;
-}
-button{
-  border: none;
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0);
-  text-align: left;
-}
-.side-bar {
+footer{
     position: fixed;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-    width: 200px;
-    padding: 10px;
-}
-.menu {
-  display: flex;
-  flex-direction: column;
-}
-.page-button{
-
-}
-.page-button :hover{
-    background-color: rgb(255, 255, 255);
-    color: black;
-}.Highlight{
-  background-color: rgb(255, 255, 255);
-  color: black;
-}
-
-.text-button{
-  display: flex;
-  width: 100%;
-  padding: 2px;
-}
-.logo {
-  width: 80px;
-  align-self: center;
-  margin-bottom: 20px;
-  animation: fadeIn 1s;
-}
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-section {
-    height: 100vh;
-    margin-left: 200px;
-}
-#ada {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  animation: fadeIn 1s;
-}
-.home-text {
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 50%;
-}
-#info {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    gap: 10px;
     justify-content: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
 }
-.info-texto {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  height: min-content;
-  width: min-content;
+.logo{
+    height: 2rem;
 }
-#trabalhos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 20px;
- 
-}
-.trabalho {
-    display: flex;
-    flex-direction: column;
-    height: min-content;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    gap: 10px;
-}
-.trabalho-title {
-}
-.trabalho-video {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-}
-.video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@media (min-width:360px) and (max-width:800px)  {
-
-html, body {
-  overflow: hidden;
-
-}
-body {
-  flex-direction: column;
-  padding: 0px
-}
-section {
-  margin-left: 0px;
+section{
 }
 h1 {
-  font-size: 30px;
+    font-size: 36px;
+    font-weight: 100;
 }
-.side-bar {
-  height: 100%;
-  width: 100%;
+strong {
+    font-weight: 800;
 }
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+iframe{
+    max-width: 100%;
+    max-height: 100%;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.menu-item {
+   /* background-color: bisque;  */
+   transition: all .4s;
+}
+.menu-item-active{
+    background-color: white;
+    color: black;
+}
+.menu-item:hover {
+    transition: all .2s;
+    background-color: white;
+    color: black;
+}
+
+.logo{
+}
+
 #ada {
-  justify-content: center;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
 }
-.home-text {
-  width: 80%;
-  text-align: right;
+.ada-text {
+    width: 50%;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#info{
+    min-height: 100%;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.info-post{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+}
+.social{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+}
+.social-icon{
+    height: 1rem;
+}
+#works {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: center;
+    /* min-height: 100%; */
+    padding: 2rem;
+    gap: 2rem;
 }
 
-#info {
-  align-items: flex-end;
-  text-align: right;
+.work{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    gap: 1rem;
+    text-align: right;
 }
-.info-texto {
-  width: 80%;
-}
-#trabalhos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+#news {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
 }
 
+.hidden{
+    opacity: 0;
+}
 
+.show{
+    transition: all 2s;
+    opacity: 1;
+}
+@media only screen and (max-width: 768px) {
+    html, body {
+        overflow: scroll;
+ 
+    }
+    body {
+        flex-direction: column;
+        height: 100%;
 
+    }
+    nav {
+        position: fixed;
+        flex-direction: column;
+        width: 100%;   
+        padding: 0;
+        z-index: 99999999999999999999999999999;
+     
+    }
+    main {
+        padding: .5rem;
+    }
+
+    section{
+    }
+    .menu{
+        flex-direction: row;
+        justify-content:space-around;
+        background-color: rgba(0, 0, 0);
+
+    }
+
+    .menu-item{
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+    .menu-item-active{
+        background-color: white;
+        color: black;
+
+    }
+    .ada-text {
+        width: 100%;
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .work {
+        background-color: rgb(0, 0, 0);
+    }
+    #works {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 4rem;
+    }
+   footer{
+
+   }
+   .logo {
+    height: 1rem;
+   }
+  
+
+    }
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/c6qtnGzYpxE?si=1OHp9rNTJ9jpwc-j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
