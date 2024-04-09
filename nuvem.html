@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuvem ADA</title>
+    <link rel="stylesheet" href="stylenuvem.css" />
+</head>
+<body>
+    <div id="container">
+    <script>
+        const caminhoPasta = 'fotos/'; // Caminho da pasta onde estão as imagens
+
+        // Função para carregar imagens dinamicamente
+        function carregarImagens() {
+            const container = document.getElementById('container');
+
+            fetch(caminhoPasta)
+                .then(response => response.text())
+                .then(html => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const imagens = doc.querySelectorAll('a');
+
+                    imagens.forEach(imagem => {
+                        if (imagem.href.endsWith('.jpg') || imagem.href.endsWith('.png')) {
+                            const img = document.createElement('img');
+                            img.src = imagem.href;
+                            img.alt = imagem.href.split('/').pop() 
+                            img.classList.add('fotos-nuvem');
+                            container.appendChild(img);
+                        }
+                    });
+                })
+                .catch(error => console.error('Erro ao carregar imagens:', error));
+        }
+
+        // Chamada da função ao carregar a página
+        window.onload = carregarImagens;
+    </script>
+    </div>
+</body>
+</html>

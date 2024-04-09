@@ -1,0 +1,26 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    background-color: black;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 4px;
+
+}
+.fotos-nuvem {
+    width: 100%; /* Define a largura da imagem como 100% do seu container */
+    height: 100%; /* Inicia a altura em 0 */
+    object-fit: cover; 
+    opacity: 1;
+
+}
+img:hover{
+    opacity: 1;
+    scale: 1.5;
+    transition: all 1s;
+    z-index: 99999999999999;
+
+}
