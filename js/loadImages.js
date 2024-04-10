@@ -5,7 +5,6 @@ function carregarImagens(path) {
   const container = document.getElementById("auto-images");
 
   fetch(path)
-    .setHeader("Access-Control-Allow-Origin", req.headers.origin)
     .then((response) => response.text())
     .then((html) => {
       const parser = new DOMParser();
@@ -24,6 +23,3 @@ function carregarImagens(path) {
     })
     .catch((error) => console.error("Erro ao carregar imagens:", error));
 }
-
-// Chamada da função ao carregar a página
-// window.onload = carregarImagens;
