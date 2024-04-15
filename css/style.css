@@ -129,7 +129,7 @@ iframe{
 }
 #works {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     min-height: max-content;
     align-self: center;
     padding: 2rem;
@@ -287,6 +287,9 @@ iframe{
    .logo {
     height: 1rem;
    }
+   .show{
+    transition: all 1s;
+}
   
 
     }
