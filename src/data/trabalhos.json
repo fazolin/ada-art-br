@@ -1,1 +1,229 @@
-{}
+[
+  {
+    "id": "reel",
+    "titulo": "REEL",
+    "ano":"2024",
+    "descricao": "Nossos trabalhos recentes reunidos em um videoclipe com cortes rápidos, destaque em mapping e instalação interativa.",
+    "descricao curta": "Nossos trabalhos recentes",
+    "ficha técnica": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nullam sit amet lectus non sapien tempor sollicitudin ac ut elit.",
+    "tags":["video-mapping","arte"],
+    "pasta": "assets/images/reel/",
+    "prefixo": "reel",
+    "thumbIndex": 1,
+    "youtubeId": "eX01_1xz2PU"
+  },
+  {
+    "id": "casa-nft",
+    "titulo": "Casa NFT",
+    "ano":"2024",
+    "descricao": "Sala imersiva com projeções para a exposição Casa NFT, explorando visualidades digitais em camadas arquitetônicas.",
+    "descricao curta": "Sala imersiva",
+    "ficha técnica": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "tags":["video-mapping","arte"],
+    "pasta": "assets/images/casa-nft/",
+    "prefixo": "casa-nft",
+    "thumbIndex": 1,
+    "youtubeId": null
+  },
+  {
+    "id": "mis-ceara",
+    "titulo": "Museu da Imagem e do Som do Ceará",
+    "descricao": "Instalação imersiva desenvolvida para a sala principal do MIS-CE, explorando sons, imagens históricas e interação sensorial com o espaço.",
+    "descricao curta": "Sala imersiva no MIS-CE",
+    "pasta": "assets/images/mis-ceara/",
+    "prefixo": "mis-ceara",
+    "thumbIndex": 1,
+    "youtubeId": null
+  },
+  {
+    "id": "aranhaverso",
+    "titulo": "Aranhaverso",
+    "descricao": "Projeção mapeada para o lançamento do filme 'Aranhaverso', transformando fachadas em universos animados.",
+    "descricao curta": "Mapping animado",
+    "pasta": "assets/images/aranhaverso/",
+    "prefixo": "aranhaverso",
+    "thumbIndex": 1,
+    "youtubeId": "Qu_VBWGrKqc"
+  },
+  {
+    "id": "titas-encontro",
+    "titulo": "Titãs Encontro",
+    "descricao": "Visuals e conteúdos de palco desenvolvidos para a histórica turnê da banda Titãs.",
+    "descricao curta": "Turnê Encontro",
+    "pasta": "assets/images/titas-encontro/",
+    "prefixo": "titas-encontro",
+    "thumbIndex": 1,
+    "youtubeId": null
+  },
+  {
+    "id": "vivara",
+    "titulo": "Vivara",
+    "descricao": "Projeções generativas sobre peças de joalheria em vitrines cenográficas.",
+    "descricao curta": "Projeções generativas",
+    "pasta": "assets/images/vivara/",
+    "prefixo": "vivara",
+    "thumbIndex": 1,
+    "youtubeId": "BXkiO_KxKMI"
+  },
+  {
+    "id": "butanta",
+    "titulo": "Instituto Butantã",
+    "descricao": "Projeção mapeada para evento institucional celebrando a ciência brasileira.",
+    "descricao curta": "Mapping institucional",
+    "pasta": "assets/images/butanta/",
+    "prefixo": "butanta",
+    "thumbIndex": 1,
+    "youtubeId": "5pCefp6nEG8"
+  },
+  {
+    "id": "color-blindness",
+    "titulo": "Color Blindness",
+    "descricao": "Instalação de vídeo imersiva apresentada no Festival Abstrata.",
+    "descricao curta": "Festival Abstrata",
+    "pasta": "assets/images/color-blindness/",
+    "prefixo": "color-blindness",
+    "thumbIndex": 1,
+    "youtubeId": "5aqhxHuuIr0"
+  },
+  {
+    "id": "world-cities",
+    "titulo": "World Cities Culture Summit",
+    "descricao": "Jantar imersivo com projeções em 360º para delegações de cidades culturais globais.",
+    "descricao curta": "Evento internacional",
+    "pasta": "assets/images/world-cities/",
+    "prefixo": "world-cities",
+    "thumbIndex": 1,
+    "youtubeId": null
+  },
+  {
+    "id": "fernando-zarif",
+    "titulo": "Fernando Zarif",
+    "descricao": "Visuals criados para a exposição do artista Fernando Zarif na Galeria Luciana Brito.",
+    "descricao curta": "Galeria Luciana Brito",
+    "pasta": "assets/images/fernando-zarif/",
+    "prefixo": "fernando-zarif",
+    "thumbIndex": 1,
+    "youtubeId": null
+  },
+  {
+  "id": "jao-multishow",
+  "titulo": "JÃO | PRÊMIO MULTISHOW",
+  "descricao": "Video mapping criado especialmente para o cenário da performance de Jão no Prêmio Multishow, com visuais pulsantes e sincronização audiovisual.",
+  "descricao curta": "Video mapping para cenário",
+  "tipo": "video",
+  "pasta": "assets/images/jao-multishow/",
+  "prefixo": "jao-multishow",
+  "thumbIndex": 1,
+  "youtubeId": "Jsr0gt0Oq6c"
+},
+{
+  "id": "ricardo-almeida",
+  "titulo": "RICARDO ALMEIDA",
+  "descricao": "Cenário generativo desenvolvido em vídeo para os desfiles da marca Ricardo Almeida, combinando elegância minimalista com padrões visuais dinâmicos.",
+  "descricao curta": "Vídeo cenário generativo",
+  "tipo": "video",
+  "pasta": "assets/images/ricardo-almeida/",
+  "prefixo": "ricardo-almeida",
+  "thumbIndex": 1,
+  "youtubeId": null
+},
+{
+  "id": "virada-2022",
+  "titulo": "VIRADA CULTURAL 2022",
+  "descricao": "Projeção mapeada no edifício do Shopping Light durante a Virada Cultural 2022, criando um espetáculo audiovisual integrado à arquitetura histórica do centro de São Paulo.",
+  "descricao curta": "Video mapping | Shopping Light",
+  "tipo": "video",
+  "pasta": "assets/images/virada-2022/",
+  "prefixo": "virada-2022",
+  "thumbIndex": 1,
+  "youtubeId": null
+},
+{
+  "id": "raiva",
+  "titulo": "RAIVA",
+  "descricao": "Projeção mapeada na fachada do Instituto Pasteur, trazendo à tona a importância da ciência e da vacinação no combate à raiva.",
+  "descricao curta": "Video mapping | Instituto Pasteur",
+  "tipo": "video",
+  "pasta": "assets/images/raiva/",
+  "prefixo": "raiva",
+  "thumbIndex": 1,
+  "youtubeId": "c6qtnGzYpxE"
+},
+{
+  "id": "aoc-face-mapping",
+  "titulo": "AOC",
+  "descricao": "Instalação de face mapping utilizando tecnologia de projeção sobre o rosto humano em tempo real, criada para a marca AOC.",
+  "descricao curta": "Face Mapping",
+  "tipo": "video",
+  "pasta": "assets/images/aoc-face-mapping/",
+  "prefixo": "aoc-face-mapping",
+  "thumbIndex": 1,
+  "youtubeId": "44gu3wSuNoQ"
+},
+{
+  "id": "fundacao-renascer",
+  "titulo": "Fundação Renascer",
+  "descricao": "Projeção mapeada desenvolvida para evento cultural da Fundação Renascer, integrando arquitetura e narrativa visual.",
+  "descricao curta": "Video Mapping",
+  "tipo": "video",
+  "pasta": "assets/images/fundacao-renascer/",
+  "prefixo": "fundacao-renascer",
+  "thumbIndex": 1,
+  "youtubeId": "WDnddETbt1A"
+},
+{
+  "id": "xp-atletas",
+  "titulo": "XP – Homenagem aos Atletas",
+  "descricao": "Projeção mapeada produzida para a XP Investimentos em homenagem aos atletas olímpicos, integrando tecnologia e narrativa esportiva.",
+  "descricao curta": "Video Mapping",
+  "tipo": "video",
+  "pasta": "assets/images/xp-atletas/",
+  "prefixo": "xp-atletas",
+  "thumbIndex": 1,
+  "youtubeId": "THrzolsQVwE"
+},
+{
+  "id": "jornada-patrimonio-2023",
+  "titulo": "Jornada do Patrimônio 2023",
+  "descricao": "Video mapping coreografado ao vivo com espetáculo de dança, realizado na Jornada do Patrimônio 2023, celebrando a memória e o movimento nos espaços públicos.",
+  "descricao curta": "Video Mapping e Dança",
+  "tipo": "video",
+  "pasta": "assets/images/jornada-patrimonio-2023/",
+  "prefixo": "jornada-patrimonio-2023",
+  "thumbIndex": 1,
+  "youtubeId": "COLOQUE_AQUI_O_ID_DO_YOUTUBE"
+},
+{
+  "id": "virada-2023",
+  "titulo": "VIRADA CULTURAL 2023",
+  "descricao": "Projeções mapeadas realizadas durante a Virada Cultural 2023, com intervenções visuais em espaços públicos da cidade.",
+  "descricao curta": "Projeções mapeadas",
+  "tipo": "video",
+  "pasta": "assets/images/virada-2023/",
+  "prefixo": "virada-2023",
+  "thumbIndex": 1,
+  "youtubeId": "qb5qjrCxBBY"
+},
+{
+  "id": "luther-netflix",
+  "titulo": "LUTHER | NETFLIX",
+  "descricao": "Projeções mapeadas desenvolvidas para o lançamento da série Luther, com intervenções urbanas em fachadas simbólicas.",
+  "descricao curta": "Lançamento da série Luther",
+  "tipo": "video",
+  "pasta": "assets/images/luther-netflix/",
+  "prefixo": "luther-netflix",
+  "thumbIndex": 1,
+  "youtubeId": null
+},
+{
+  "id": "instituto-butanta",
+  "titulo": "Instituto Butantã",
+  "descricao": "Projeção mapeada desenvolvida para o Instituto Butantã, com narrativas visuais celebrando a ciência e a saúde pública.",
+  "descricao curta": "Video Mapping",
+  "tipo": "video",
+  "pasta": "assets/images/instituto-butanta/",
+  "prefixo": "instituto-butanta",
+  "thumbIndex": 1,
+  "youtubeId": "5pCefp6nEG8"
+}
+]

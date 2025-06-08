@@ -1,1 +1,153 @@
-{}
+/* =========================
+   RESET E ESTILO BASE
+========================= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #f0f0f0;
+}
+
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+h1, h2, h3 {
+  margin: 1rem 0 0.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* =========================
+   GRID DE WORKS (INDEX)
+========================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.card a {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.card img,
+.thumb-youtube {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #000;
+}
+
+.thumb-youtube {
+  transform: scale(1.15); /* Zoom fixo para cortar barras pretas */
+}
+
+/* =========================
+   GALERIA DE IMAGENS (DETALHE)
+========================= */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* =========================
+   VÍDEO EMBED (DETALHE)
+========================= */
+.video-wrapper {
+  margin-top: 2rem;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid #222;
+  background-color: #000;
+}
+
+footer a {
+  color: #00aaff;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+body {
+  font-family: 'Victor Mono', monospace;
+  background-color: #000;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+.ficha-tecnica {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid #ccc;
+}
+
+.ficha-tecnica h4 {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.ficha-tecnica p {
+  font-size: 0.95em;
+  white-space: pre-line;
+}
+
