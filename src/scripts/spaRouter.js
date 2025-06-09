@@ -1,66 +1,9 @@
-function iniciarSPA() {
-  const links = document.querySelectorAll(".nav-link");
+// Monitora mudanças na hash (ex: #trabalho?id=xxx)
+window.addEventListener("hashchange", verificarHashTrabalho);
+window.addEventListener("DOMContentLoaded", verificarHashTrabalho);
 
-  // Scroll suave ao clicar no menu
-  links.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      const id = link.getAttribute("href").substring(1);
-      const target = document.getElementById(id);
-      const headerOffset = 80;
-
-      if (target) {
-        const offsetTop = target.offsetTop - headerOffset;
-        window.scrollTo({ top: offsetTop, behavior: "smooth" });
-        history.pushState(null, "", `#${id}`);
-      }
-    });
-  });
-
-  // Novo observer mais robusto
-  let activeSectionId = null;
-  window.addEventListener("scroll", () => {
-    const sections = document.querySelectorAll(".spa-section");
-    const scrollMid = window.scrollY + window.innerHeight / 2;
-
-    let bestSection = null;
-    let bestDelta = Infinity;
-
-    sections.forEach((section) => {
-      const rect = section.getBoundingClientRect();
-      const sectionTop = window.scrollY + rect.top;
-      const sectionMid = sectionTop + rect.height / 2;
-      const delta = Math.abs(scrollMid - sectionMid);
-
-      if (delta < bestDelta) {
-        bestDelta = delta;
-        bestSection = section;
-      }
-    });
-
-    if (bestSection && bestSection.id !== activeSectionId) {
-      activeSectionId = bestSection.id;
-      document
-        .querySelectorAll(".nav-link")
-        .forEach((link) => link.classList.remove("active"));
-
-      const newActive = document.querySelector(
-        `.nav-link[href="#${activeSectionId}"]`
-      );
-      if (newActive) newActive.classList.add("active");
-    }
-  });
-
-  // Verifica hash inicial
-  verificarHashAtual();
-
-  // Monitora mudanças na hash
-  window.addEventListener("hashchange", verificarHashAtual);
-}
-
-function verificarHashAtual() {
+function verificarHashTrabalho() {
   const hash = window.location.hash;
-
   if (hash.startsWith("#trabalho?id=")) {
     const id = new URLSearchParams(hash.split("?")[1]).get("id");
     if (id) abrirModalTrabalho(id);
@@ -130,7 +73,7 @@ async function abrirModalTrabalho(id) {
   }
 }
 
-// Fecha o modal clicando fora ou no X
+// Fecha modal ao clicar fora ou no X
 window.addEventListener("click", (e) => {
   const modal = document.getElementById("modal");
   if (
@@ -142,7 +85,7 @@ window.addEventListener("click", (e) => {
   }
 });
 
-// Fecha com ESC
+// Fecha modal com ESC
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     document.getElementById("modal").classList.remove("active");

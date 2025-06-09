@@ -3,10 +3,13 @@ fetch("src/data/trabalhos.json")
   .then(async (trabalhos) => {
     const container = document.getElementById("trabalhos");
 
+    // Ordena por ano (descendente)
+    trabalhos.sort((a, b) => (b.ano || 0) - (a.ano || 0));
+
     for (const trab of trabalhos) {
       const div = document.createElement("div");
       div.classList.add("card");
-      div.dataset.id = trab.id; // necessário para modal
+      div.dataset.id = trab.id;
 
       let capa = "";
       let capaEncontrada = false;
@@ -60,7 +63,6 @@ fetch("src/data/trabalhos.json")
       const isYouTube = capa.includes("youtube.com");
       const extraClass = isYouTube ? "thumb-youtube" : "";
 
-      // Sem <a>, só um card com data-id
       div.innerHTML = `
         <div class="thumb-wrapper">
           <img src="${capa}" alt="${trab.titulo}" class="${extraClass}" />
@@ -69,7 +71,6 @@ fetch("src/data/trabalhos.json")
         <p>${trab["descricao curta"] || trab.descricao}</p>
       `;
 
-      // Evento: clicou no card → SPA muda hash
       div.addEventListener("click", () => {
         location.hash = `#trabalho?id=${trab.id}`;
       });

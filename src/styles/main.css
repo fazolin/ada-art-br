@@ -42,11 +42,6 @@ a {
   transition: color 0.2s;
 }
 
-a:hover,
-a.active {
-  color: #888;
-}
-
 /* HEADER */
 header {
   position: fixed;
@@ -70,15 +65,21 @@ header {
 
 .nav-menu li a {
   color: #fff;
-  padding: 0.2rem 0.5rem;
+  padding: 0.3rem 0.6rem;
   line-height: 1;
-  display: inline-block;
-  border-radius: 2px;
-  transition: background-color 0.2s, color 0.2s;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.nav-menu li a.active,
-.nav-menu li a:hover {
+/* Hover (apenas para dispositivos com hover) */
+@media (hover: hover) {
+  .nav-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Estado ativo sempre visível */
+.nav-menu li a.active {
   background-color: #fff;
   color: #000;
 }
@@ -122,7 +123,7 @@ footer a:hover .footer-icon {
   scroll-margin-top: 80px;
 }
 
-/* GRID DE WORKS */
+/* WORKS GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -130,7 +131,7 @@ footer a:hover .footer-icon {
   margin-top: 2rem;
 }
 
-/* CARD WORK */
+/* CARD */
 .card {
   position: relative;
   aspect-ratio: 1 / 1;
@@ -144,12 +145,6 @@ footer a:hover .footer-icon {
   justify-content: center;
 }
 
-.card:hover {
-  transform: translateY(-4px);
-}
-
-/* IMAGEM */
-
 .card img {
   position: absolute;
   top: 0;
@@ -161,12 +156,7 @@ footer a:hover .footer-icon {
   z-index: 1;
 }
 
-/* IMAGEM YOUTUBE */
-.thumb-youtube {
-  transform: scale(1.15);
-}
-
-/* TEXTO ESCONDIDO */
+/* Texto escondido */
 .card h3,
 .card p {
   position: absolute;
@@ -191,10 +181,16 @@ footer a:hover .footer-icon {
   font-size: 0.9rem;
 }
 
-/* MOSTRAR NO HOVER */
-.card:hover h3,
-.card:hover p {
-  opacity: 1;
+/* Hover (apenas para dispositivos com hover) */
+@media (hover: hover) {
+  .card:hover {
+    transform: translateY(-4px);
+  }
+
+  .card:hover h3,
+  .card:hover p {
+    opacity: 1;
+  }
 }
 
 /* GALERIA */
@@ -269,7 +265,7 @@ footer a:hover .footer-icon {
   color: #fff;
 }
 
-/* ADA & INFO FONTES */
+/* ADA & INFO */
 #ada h2 {
   font-size: 2.8rem;
   letter-spacing: 0.05em;
@@ -290,11 +286,18 @@ footer a:hover .footer-icon {
   line-height: 1.7;
 }
 
-/* FADE */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
 #works {
   min-height: 100vh;
+}
+
+/* FADE ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
