@@ -1,0 +1,17 @@
+# Ignora apenas o que não precisa ir pro repositório
+
+# Node.js
+node_modules/
+package-lock.json
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Variáveis de ambiente (caso venha a usar no futuro)
+.env
