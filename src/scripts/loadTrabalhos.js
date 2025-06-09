@@ -45,16 +45,9 @@ fetch("src/data/trabalhos.json")
         }
       }
 
-      // 3. Thumb YouTube
+      // 3. Thumb YouTube direto, sem fetch
       if (!capaEncontrada && trab.youtubeId) {
-        const tentativaMax = `https://img.youtube.com/vi/${trab.youtubeId}/maxresdefault.jpg`;
-        const tentativaHQ = `https://img.youtube.com/vi/${trab.youtubeId}/hqdefault.jpg`;
-        try {
-          const res = await fetch(tentativaMax, { method: "HEAD" });
-          capa = res.ok ? tentativaMax : tentativaHQ;
-        } catch {
-          capa = tentativaHQ;
-        }
+        capa = `https://img.youtube.com/vi/${trab.youtubeId}/maxresdefault.jpg`;
         capaEncontrada = true;
       }
 
@@ -63,9 +56,14 @@ fetch("src/data/trabalhos.json")
       const isYouTube = capa.includes("youtube.com");
       const extraClass = isYouTube ? "thumb-youtube" : "";
 
+      const imgTag = isYouTube
+        ? `<img src="${capa}" alt="${trab.titulo}" class="${extraClass}" 
+                onerror="this.onerror=null;this.src='https://img.youtube.com/vi/${trab.youtubeId}/hqdefault.jpg'" />`
+        : `<img src="${capa}" alt="${trab.titulo}" class="${extraClass}" />`;
+
       div.innerHTML = `
         <div class="thumb-wrapper">
-          <img src="${capa}" alt="${trab.titulo}" class="${extraClass}" />
+          ${imgTag}
         </div>
         <h3>${trab.titulo}</h3>
         <p>${trab["descricao curta"] || trab.descricao}</p>
