@@ -1,16 +1,27 @@
 /* =========================
-   RESET E ESTILO BASE
+   FONTE
 ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono&display=swap');
+
+/* =========================
+   RESET E BASE
+========================= */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Victor Mono', monospace;
+  font-weight: 300;
   background-color: #000;
   color: #f0f0f0;
+  overflow-x: hidden;
 }
 
 main {
-  padding: 2rem;
+  padding: 6rem 2rem 4rem;
   max-width: 1200px;
   margin: auto;
 }
@@ -20,31 +31,147 @@ main {
 ========================= */
 h1, h2, h3 {
   margin: 1rem 0 0.5rem;
-  font-weight: 600;
   color: #fff;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  text-align: left;
 }
 
 /* =========================
-   GRID DE WORKS (INDEX)
+   PARÁGRAFOS
+========================= */
+p {
+  max-width: 700px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* =========================
+   LINKS GLOBAIS
+========================= */
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover,
+a.active {
+  color: #888;
+}
+
+/* =========================
+   HEADER FIXO
+========================= */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  border-bottom: 1px solid #222;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  line-height: 1;
+  display: inline-block;
+  border-radius: 2px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-menu li a.active,
+.nav-menu li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* =========================
+   FOOTER FIXO E CENTRALIZADO
+========================= */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #000;
+  border-top: 1px solid #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #fff;
+  z-index: 1000;
+  text-align: center;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+  transition: opacity 0.2s;
+}
+
+footer a:hover .footer-icon {
+  opacity: 0.6;
+}
+
+/* =========================
+   SEÇÕES SPA CENTRALIZADAS
+========================= */
+.spa-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6rem 2rem;
+  scroll-margin-top: 80px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================
+   GRID DE WORKS
 ========================= */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .card {
   background: #111;
   border: 1px solid #333;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 1rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.05);
 }
 
 .card a {
@@ -63,10 +190,11 @@ h1, h2, h3 {
   object-fit: cover;
   display: block;
   background: #000;
+  border-radius: 6px;
 }
 
 .thumb-youtube {
-  transform: scale(1.15); /* Zoom fixo para cortar barras pretas */
+  transform: scale(1.15);
 }
 
 /* =========================
@@ -76,7 +204,7 @@ h1, h2, h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 .galeria img {
@@ -106,48 +234,29 @@ h1, h2, h3 {
   border: none;
 }
 
-/* =========================
-   FOOTER
-========================= */
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
-  color: #aaa;
-  border-top: 1px solid #222;
-  background-color: #000;
+/* Fonte customizada para ADA */
+#ada h2 {
+  font-size: 2.8rem;
+  letter-spacing: 0.05em;
 }
 
-footer a {
-  color: #00aaff;
-  text-decoration: none;
-  margin: 0 0.5rem;
+#ada p {
+  font-size: 1.3rem;
+  line-height: 1.8;
 }
 
-footer a:hover {
-  text-decoration: underline;
-}
-body {
-  font-family: 'Victor Mono', monospace;
-  background-color: #000;
-  color: #f0f0f0;
-  margin: 0;
-  padding: 0;
-}
-.ficha-tecnica {
-  margin-top: 2em;
-  padding-top: 1em;
-  border-top: 1px solid #ccc;
+/* Fonte customizada para INFO */
+#info h2 {
+  font-size: 2.4rem;
+  letter-spacing: 0.04em;
 }
 
-.ficha-tecnica h4 {
-  font-size: 1.1em;
-  margin-bottom: 0.5em;
-  font-weight: bold;
+#info p {
+  font-size: 1.1rem;
+  line-height: 1.7;
 }
 
-.ficha-tecnica p {
-  font-size: 0.95em;
-  white-space: pre-line;
+/* Ajuste mínimo para garantir ativação da seção WORKS */
+#works {
+  min-height: 100vh;
 }
-

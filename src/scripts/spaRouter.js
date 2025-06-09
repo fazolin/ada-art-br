@@ -1,20 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // Carrega header
-  fetch("src/components/header.html")
-    .then((res) => res.text())
-    .then((data) => {
-      document.getElementById("header").innerHTML = data;
-      iniciarSPA(); // Roda após carregar header
-    });
-
-  // Carrega footer
-  fetch("src/components/footer.html")
-    .then((res) => res.text())
-    .then((data) => {
-      document.getElementById("footer").innerHTML = data;
-    });
-});
-
 function iniciarSPA() {
   const links = document.querySelectorAll(".nav-link");
 
@@ -39,7 +22,7 @@ function iniciarSPA() {
 
   // Highlight do menu com base na rolagem
   const observerOptions = {
-    threshold: 0.3,
+    threshold: 0.1, // corrigido para detectar melhor seções como "works"
   };
 
   const observer = new IntersectionObserver((entries) => {
