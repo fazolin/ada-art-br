@@ -23,6 +23,13 @@ document.addEventListener("mousemove", (event) => {
   mouseY = (event.clientY / window.innerHeight - 0.5) * 2;
 });
 
+// Zoom tracking
+let zoomZ = camera.position.z;
+document.addEventListener("wheel", (event) => {
+  zoomZ += event.deltaY * 0.01;
+  zoomZ = Math.min(Math.max(10, zoomZ), 100); // limita entre 10 e 100
+});
+
 // Esfera central
 const centerGeometry = new THREE.IcosahedronGeometry(2.5, 1);
 const centerMaterial = new THREE.MeshBasicMaterial({
@@ -95,11 +102,12 @@ scene.add(stars);
 function animate() {
   requestAnimationFrame(animate);
 
-  // Suave interpolação da câmera em resposta ao mouse
+  // Interpolação suave da câmera em resposta ao mouse e zoom
   const targetX = mouseX * 5;
   const targetY = 15 + mouseY * 5;
   camera.position.x += (targetX - camera.position.x) * 0.05;
   camera.position.y += (targetY - camera.position.y) * 0.05;
+  camera.position.z += (zoomZ - camera.position.z) * 0.05;
   camera.lookAt(0, 0, 0);
 
   centerSphere.rotation.y += 0.002;
