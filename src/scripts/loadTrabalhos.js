@@ -45,25 +45,11 @@ fetch("src/data/trabalhos.json")
         }
       }
 
-      // 3. Thumb YouTube direto, sem fetch
-      if (!capaEncontrada && trab.youtubeId) {
-        capa = `https://img.youtube.com/vi/${trab.youtubeId}/maxresdefault.jpg`;
-        capaEncontrada = true;
-      }
-
       if (!capaEncontrada) continue;
-
-      const isYouTube = capa.includes("youtube.com");
-      const extraClass = isYouTube ? "thumb-youtube" : "";
-
-      const imgTag = isYouTube
-        ? `<img src="${capa}" alt="${trab.titulo}" class="${extraClass}" 
-                onerror="this.onerror=null;this.src='https://img.youtube.com/vi/${trab.youtubeId}/hqdefault.jpg'" />`
-        : `<img src="${capa}" alt="${trab.titulo}" class="${extraClass}" />`;
 
       div.innerHTML = `
         <div class="thumb-wrapper">
-          ${imgTag}
+          <img src="${capa}" alt="${trab.titulo}" />
         </div>
         <h3>${trab.titulo}</h3>
         <p>${trab["descricao curta"] || trab.descricao}</p>

@@ -163,6 +163,7 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  justify-content: center;
 }
 
 /* CARDS */
@@ -352,16 +353,4 @@ footer {
     padding-top: 4rem;
     padding-bottom: 2rem;
   }
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-  justify-content: center; /* <--- esta é a linha nova */
-}
-.thumb-youtube {
-  transform: scale(1.5);
-  object-fit: cover;
-  transition: transform 0.3s ease;
 }
