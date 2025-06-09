@@ -13,6 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((data) => {
       document.getElementById("footer").innerHTML = data;
     });
+
+  // Cria dinamicamente o modal na página (caso não esteja no HTML)
+  const modalHTML = `
+    <div id="modal" class="modal-overlay">
+      <div class="modal-content"></div>
+    </div>
+  `;
+  document.body.insertAdjacentHTML("beforeend", modalHTML);
 });
 
 function iniciarSPA() {
@@ -37,28 +45,39 @@ function iniciarSPA() {
     });
   });
 
-  // Highlight do menu com base na rolagem
-  const observerOptions = {
-    threshold: 0.3,
-  };
+  // Destaque do menu com base na rolagem central
+  let activeSectionId = null;
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      const id = entry.target.id;
-      const navLink = document.querySelector(`a[href="#${id}"]`);
-      if (navLink) {
-        if (entry.isIntersecting) {
-          document
-            .querySelectorAll(".nav-link")
-            .forEach((l) => l.classList.remove("active"));
-          navLink.classList.add("active");
-        }
+  window.addEventListener("scroll", () => {
+    const sections = document.querySelectorAll(".spa-section");
+    const scrollMiddle = window.scrollY + window.innerHeight / 2;
+
+    let closestSection = null;
+    let smallestDistance = Infinity;
+
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      const sectionMiddle = window.scrollY + rect.top + rect.height / 2;
+      const distance = Math.abs(scrollMiddle - sectionMiddle);
+
+      if (distance < smallestDistance) {
+        smallestDistance = distance;
+        closestSection = section;
       }
     });
-  }, observerOptions);
 
-  document.querySelectorAll(".spa-section").forEach((section) => {
-    observer.observe(section);
+    if (closestSection && closestSection.id !== activeSectionId) {
+      activeSectionId = closestSection.id;
+
+      document
+        .querySelectorAll(".nav-link")
+        .forEach((link) => link.classList.remove("active"));
+
+      const currentLink = document.querySelector(
+        `.nav-link[href="#${activeSectionId}"]`
+      );
+      if (currentLink) currentLink.classList.add("active");
+    }
   });
 
   // Scroll para a seção atual ao recarregar

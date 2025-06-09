@@ -6,14 +6,13 @@ fetch("src/data/trabalhos.json")
     for (const trab of trabalhos) {
       const div = document.createElement("div");
       div.classList.add("card");
+      div.dataset.id = trab.id; // necessário para modal
 
-      const link = `trabalho.html?id=${trab.id}`;
       let capa = "";
       let capaEncontrada = false;
-
       const extensoes = ["jpg", "jpeg", "png", "bmp", "webp"];
 
-      // 1. Tenta imagem com thumbIndex (prefixo (n).ext)
+      // 1. Tenta imagem com índice (prefixo (n).ext)
       if (trab.thumbIndex && trab.pasta && trab.prefixo) {
         for (const ext of extensoes) {
           const tentativa = `${trab.pasta}${trab.prefixo} (${trab.thumbIndex}).${ext}`;
@@ -28,7 +27,7 @@ fetch("src/data/trabalhos.json")
         }
       }
 
-      // 2. Se falhou, tenta imagem única (prefixo.ext)
+      // 2. Tenta imagem única (prefixo.ext)
       if (!capaEncontrada && trab.pasta && trab.prefixo) {
         for (const ext of extensoes) {
           const tentativa = `${trab.pasta}${trab.prefixo}.${ext}`;
@@ -43,18 +42,16 @@ fetch("src/data/trabalhos.json")
         }
       }
 
-      // 3. Se ainda falhou, tenta thumb do YouTube
+      // 3. Thumb YouTube
       if (!capaEncontrada && trab.youtubeId) {
         const tentativaMax = `https://img.youtube.com/vi/${trab.youtubeId}/maxresdefault.jpg`;
         const tentativaHQ = `https://img.youtube.com/vi/${trab.youtubeId}/hqdefault.jpg`;
-
         try {
           const res = await fetch(tentativaMax, { method: "HEAD" });
           capa = res.ok ? tentativaMax : tentativaHQ;
         } catch {
           capa = tentativaHQ;
         }
-
         capaEncontrada = true;
       }
 
@@ -63,13 +60,19 @@ fetch("src/data/trabalhos.json")
       const isYouTube = capa.includes("youtube.com");
       const extraClass = isYouTube ? "thumb-youtube" : "";
 
+      // Sem <a>, só um card com data-id
       div.innerHTML = `
-        <a href="${link}">
+        <div class="thumb-wrapper">
           <img src="${capa}" alt="${trab.titulo}" class="${extraClass}" />
-        </a>
+        </div>
         <h3>${trab.titulo}</h3>
         <p>${trab["descricao curta"] || trab.descricao}</p>
       `;
+
+      // Evento: clicou no card → SPA muda hash
+      div.addEventListener("click", () => {
+        location.hash = `#trabalho?id=${trab.id}`;
+      });
 
       container.appendChild(div);
     }
