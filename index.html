@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ADA — Ateliê Digital Analógico</title>
     <link rel="stylesheet" href="src/styles/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
   </head>
   <body>
+    <canvas id="background-canvas"></canvas>
     <div id="header"></div>
 
     <main>
@@ -36,6 +38,7 @@
     </div>
 
     <!-- scripts com type="module" -->
+    <script src="src/scripts/background.js" type="module"></script>
     <script type="module" src="src/scripts/loadComponents.js"></script>
     <script type="module" src="src/scripts/loadTrabalhos.js"></script>
     <script type="module" src="src/scripts/spaRouter.js"></script>
