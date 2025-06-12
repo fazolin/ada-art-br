@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modular Grid</title>
+
+    <!-- Estilos globais e da grid -->
+    <link rel="stylesheet" href="src/styles/main.css" />
+    <link rel="stylesheet" href="src/styles/modularGrid.css" />
+  </head>
+  <body>
+    <div id="grid-container"></div>
+
+    <script type="module">
+      import { createModularGrid } from "./src/scripts/modularGrid.js";
+
+      createModularGrid({
+        containerId: "grid-container",
+        totalBlocks: 40,
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,344 @@
+[
+  {
+    "slug": "reel-2024",
+    "title": "Reel 2024",
+    "year": 2026,
+    "description": "Nossos trabalhos recentes reunidos em um videoclipe com cortes rápidos, destaque em mapping e instalação interativa.",
+    "shortDescription": "Nossos trabalhos recentes",
+    "tags": [
+      "video mapping",
+      "anamórfico",
+      "sala imersiva",
+      "shows"
+    ],
+    "thumb": 1,
+    "totalImages": 1,
+    "media": {
+      "youtube": "eX01_1xz2PU"
+    },
+    "credits": null
+  },
+  {
+    "slug": "casa-nft",
+    "title": "Casa NFT",
+    "year": 2022,
+    "description": "Sala imersiva com projeções para a exposição Casa NFT, explorando visualidades digitais em camadas arquitetônicas.",
+    "shortDescription": "Sala imersiva",
+    "tags": [
+      "sala imersiva",
+      "video mapping",
+      "nft",
+      "funart"
+    ],
+    "thumb": 1,
+    "totalImages": 14,
+    "media": {
+      "youtube": null
+    },
+    "credits": null
+  },
+  {
+    "slug": "aranhaverso",
+    "title": "Aranhaverso",
+    "year": 2023,
+    "description": "Projeção mapeada para o lançamento do filme 'Aranhaverso', transformando fachadas em universos animados.",
+    "shortDescription": "Projeção urbana",
+    "tags": [
+      "video mapping",
+      "lançamento de produto",
+      "empena"
+    ],
+    "thumb": 1,
+    "totalImages": 1,
+    "media": {
+      "youtube": "Qu_VBWGrKqc"
+    },
+    "credits": null
+  },
+  {
+    "slug": "titas-encontro",
+    "title": "Titãs encontro",
+    "year": 2023,
+    "description": "Visuals e conteúdos de palco desenvolvidos para a histórica turnê da banda Titãs.",
+    "shortDescription": "Visuais",
+    "tags": [
+      "visuais",
+      "touchdesigner",
+      "shows",
+      "titãs",
+      "banda",
+      "ao vivo"
+    ],
+    "thumb": 1,
+    "totalImages": 34,
+    "media": {
+      "youtube": null
+    },
+    "credits": null
+  },
+  {
+    "slug": "vivara",
+    "title": "Vivara",
+    "year": 2023,
+    "description": "Projeções generativas na incrível Pinacoteca de SP para jantar da Vivara.",
+    "shortDescription": "Projeções generativas",
+    "tags": [
+      "video mapping",
+      "generativo",
+      "touchdesigner"
+    ],
+    "thumb": 1,
+    "totalImages": 1,
+    "media": {
+      "youtube": "BXkiO_KxKMI"
+    },
+    "credits": null
+  },
+  {
+    "slug": "world-cities-culture-summit",
+    "title": "World Cities Culture Summit",
+    "year": 2023,
+    "description": "Jantar imersivo com projeções em 360º para delegações de cidades culturais globais.",
+    "shortDescription": "Jantar imersivo",
+    "tags": [
+      "video mapping",
+      "jantar imersivo"
+    ],
+    "thumb": 1,
+    "totalImages": 18,
+    "media": {
+      "youtube": null
+    },
+    "credits": null
+  },
+  {
+    "slug": "jornada-do-patrimonio-2023",
+    "title": "Jornada do Patrimônio 2023",
+    "year": 2023,
+    "description": "Video mapping coreografado ao vivo com espetáculo de dança, realizado na Jornada do Patrimônio 2023, celebrando a memória e o movimento nos espaços públicos.",
+    "shortDescription": "Video mapping",
+    "tags": [
+      "video mapping",
+      "dança",
+      "espetáculo"
+    ],
+    "credits": "",
+    "thumb": 1,
+    "totalImages": 8
+  },
+  {
+    "slug": "virada-cultural-2023",
+    "title": "VIRADA CULTURAL 2023",
+    "year": 2023,
+    "description": "Projeções mapeadas realizadas durante a Virada Cultural 2023, com intervenções visuais em espaços públicos da cidade.",
+    "shortDescription": "Video mapping",
+    "tags": [
+      "video mapping",
+      "virada cultural",
+      ""
+    ],
+    "credits": "",
+    "thumb": 1,
+    "totalImages": 1,
+    "media": {
+      "youtube": "qb5qjrCxBBY&t=2s"
+    }
+  },
+  {
+    "slug": "luther-or-netflix",
+    "title": "LUTHER | NETFLIX",
+    "year": 2023,
+    "description": "Projeções mapeadas desenvolvidas para o lançamento da série Luther, com intervenções urbanas em fachadas simbólicas.",
+    "shortDescription": "Video mapping",
+    "tags": [
+      "video mapping",
+      "netflix"
+    ],
+    "credits": "",
+    "thumb": 1,
+    "totalImages": 15
+  },
+  {
+    "slug": "museu-da-imagem-e-do-som-do-ceara",
+    "title": "Museu da Imagem e do Som do Ceará",
+    "year": 2023,
+    "description": "Instalação imersiva desenvolvida para a sala principal do MIS-CE, explorando sons, imagens históricas e interação sensorial com o espaço.",
+    "shortDescription": "Sala imersiva",
+    "tags": [
+      "sala imersiva",
+      "mis"
+    ],
+    "credits": "",
+    "thumb": 1,
+    "totalImages": 13
+  },
+  {
+    "slug": "color-blindness",
+    "title": "Color Blindness",
+    "year": 2023,
+    "description": "Video mapping generativo apresentado no Festival Abstrata.",
+    "shortDescription": "Video mapping",
+    "tags": [
+      "video mapping",
+      "festival abstrata"
+    ],
+    "credits": "",
+    "thumb": 1,
+    "totalImages": 1,
+    "media": {
+      "youtube": "5aqhxHuuIr0"
+    }
+  },
+  {
+    "slug": "fernando-zarif",
+    "title": "Fernando Zarif",
+    "year": 2022,
+    "description": "Visuals criados para a exposição do artista Fernando Zarif na Galeria Luciana Brito.",
+    "shortDescription": "Video mapping",
+    "tags": [
+      "video mapping",
+      "arte"
+    ],
+    "credits": "",
+    "thumb": 1,
+    "totalImages": 10
+  },
+  {
+    "slug": "jao-or-premio-multishow",
+    "title": "JÃO | PRÊMIO MULTISHOW",
+    "year": 2022,
+    "description": "Video mapping criado especialmente para o cenário da performance de Jão no Prêmio Multishow, com visuais pulsantes e sincronização audiovisual.",
+    "shortDescription": "Video mapping",
+    "tags": [
+      "video mapping"
+    ],
+    "credits": "",
+    "thumb": 1,
+    "totalImages": 1,
+    "media": {
+      "youtube": "Jsr0gt0Oq6c"
+    }
+  },
+  {
+    "slug": "virada-cultural-2022",
+    "title": "VIRADA CULTURAL 2022",
+    "year": 2022,
+    "description": "Projeção mapeada no edifício do Shopping Light durante a Virada Cultural 2022, criando um espetáculo audiovisual integrado à arquitetura histórica do centro de São Paulo.",
+    "shortDescription": "Video mapping",
+    "tags": [
+      "video mapping"
+    ],
+    "credits": "",
+    "thumb": 1,
+    "totalImages": 8
+  },
+  {
+    "slug": "raiva",
+    "title": "RAIVA",
+    "year": 2023,
+    "description": "Projeção mapeada na fachada do Instituto Pasteur, trazendo à tona a importância da ciência e da vacinação no combate à raiva.",
+    "shortDescription": "Video mapping",
+    "tags": [
+      "video mapping"
+    ],
+    "credits": "",
+    "thumb": 1,
+    "totalImages": 1,
+    "media": {
+      "youtube": "c6qtnGzYpxE"
+    }
+  },
+  {
+    "slug": "instituto-butanta",
+    "title": "Instituto Butantã",
+    "year": 2022,
+    "description": "Projeção mapeada desenvolvida para o Instituto Butantã, com narrativas visuais celebrando a ciência e a saúde pública.",
+    "shortDescription": "Video mapping",
+    "tags": [
+      "video mapping"
+    ],
+    "credits": "",
+    "thumb": 1,
+    "totalImages": 1,
+    "media": {
+      "youtube": "5pCefp6nEG8"
+    }
+  },
+  {
+    "slug": "xp-homenagem-aos-atletas",
+    "title": "XP – Homenagem aos Atletas",
+    "year": 2022,
+    "description": "Projeção mapeada produzida para a XP Investimentos em homenagem aos atletas olímpicos, integrando tecnologia e narrativa esportiva.",
+    "shortDescription": "Video mapping",
+    "tags": [
+      "video mapping",
+      "projeção urbana"
+    ],
+    "credits": "",
+    "thumb": 1,
+    "totalImages": 1,
+    "media": {
+      "youtube": "THrzolsQVwE"
+    }
+  },
+  {
+    "slug": "ricardo-almeida",
+    "title": "RICARDO ALMEIDA",
+    "year": 2019,
+    "description": "Cenário generativo desenvolvido em vídeo para ensaio fotográfico da marca Ricardo Almeida, combinando elegância minimalista com padrões visuais dinâmicos.",
+    "shortDescription": "Cenário generativo",
+    "tags": [
+      "video cenário",
+      "generativo"
+    ],
+    "credits": "",
+    "thumb": 1,
+    "totalImages": 7
+  },
+  {
+    "slug": "aoc",
+    "title": "AOC",
+    "year": 2020,
+    "description": "Instalação de face mapping utilizando tecnologia de projeção sobre o rosto humano em tempo real, criada para a marca AOC.",
+    "shortDescription": "Face mapping",
+    "tags": [
+      "face mapping"
+    ],
+    "credits": "",
+    "thumb": 1,
+    "totalImages": 1,
+    "media": {
+      "youtube": "44gu3wSuNoQ"
+    }
+  },
+  {
+    "slug": "fundacao-renascer",
+    "title": "Fundação Renascer",
+    "year": 2019,
+    "description": "Projeção mapeada desenvolvida para evento cultural da Fundação Renascer, integrando arquitetura e narrativa visual.",
+    "shortDescription": "Video mapping",
+    "tags": [
+      "video mapping"
+    ],
+    "credits": "",
+    "thumb": 1,
+    "totalImages": 1,
+    "media": {
+      "youtube": "WDnddETbt1A"
+    }
+  },
+  {
+    "slug": "jantar-imersivo",
+    "title": "Jantar imersivo",
+    "year": 2025,
+    "description": "Jantar imersivo para a família Yunes",
+    "shortDescription": "Jantar imersivo",
+    "tags": [
+      "video mapping",
+      "imersivo"
+    ],
+    "credits": "",
+    "thumb": 1,
+    "totalImages": 12
+  }
+]

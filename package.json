@@ -1,9 +1,11 @@
 {
   "name": "portifolio",
   "version": "1.0.0",
+  "description": "CLI para cadastrar novos projetos no portfólio com geração automática de imagens e atualização de JSON",
+  "author": "Caio Fazolin",
   "type": "module",
   "scripts": {
-    "novo": "node tools/cli.js"
+    "new": "node tools/new-entry.js"
   },
   "dependencies": {
     "fs-extra": "^11.3.0",

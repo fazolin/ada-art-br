@@ -1,0 +1,10 @@
+/* src/styles/modularGrid.css */
+
+#grid-container {
+  background-color: blue;
+}
+
+.modular-block {
+  border-radius: 0.5rem;
+}
+
